@@ -82,13 +82,13 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{baseUrl}}/otusapp/ezinder/health",
+					"raw": "{{baseUrl}}/otusapp/dglukhov/health",
 					"host": [
 						"{{baseUrl}}"
 					],
 					"path": [
 						"otusapp",
-						"ezinder",
+						"dglukhov",
 						"health"
 					]
 				}
@@ -101,13 +101,13 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{baseUrl}}/otusapp/ezinder/some/path",
+					"raw": "{{baseUrl}}/otusapp/dglukhov/some/path",
 					"host": [
 						"{{baseUrl}}"
 					],
 					"path": [
 						"otusapp",
-						"ezinder",
+						"dglukhov",
 						"some",
 						"path"
 					]

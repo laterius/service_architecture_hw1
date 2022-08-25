@@ -1,12 +1,10 @@
 FROM golang:1.18-alpine3.16 as builder
-WORKDIR /cmd
-COPY ./cmd/go.mod .
-COPY ./cmd/go.sum .
+WORKDIR /app
+COPY go.mod ./
+COPY go.sum ./
 RUN go mod download
-COPY ./cmd .
-RUN go build -o svc
+COPY *.go ./
 
-FROM alpine:3.16
-WORKDIR /cmd
-COPY --from=builder /cmd/svc .
-ENTRYPOINT /cmd/svc
+RUN go build -o /docker-msa-hw1
+
+CMD ["/docker-msa-hw1"]
